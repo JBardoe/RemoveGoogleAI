@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Remove Google AI",
+    "description": "Remove Google AI summaries in search results",
+    "version": "1.0",
+    "action": {
+        "default_icon": "images/icon.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["scripts/content.js"],
+            "matches": ["https://www.google.com/search?q=*"]
+        }
+    ]
+}
