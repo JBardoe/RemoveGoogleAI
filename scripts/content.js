@@ -1,2 +1,6 @@
-const aiTab = document.getElementById("Odp5De");
-if(aiTab != null){aiTab.remove();}
+const aiTab = document.getElementById("eKIzJc");
+if(aiTab != null){
+    while(aiTab.hasChildNodes()){
+        aiTab.removeChild(aiTab.firstChild);
+    }
+}
